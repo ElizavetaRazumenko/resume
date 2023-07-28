@@ -1,0 +1,61 @@
+:root {
+    --bg-color: #111a14;
+    --text-color: #ffffff;
+}
+body {
+    box-sizing: border-box;
+    margin:0; 
+    padding:0; 
+    background-color: var(--bg-color);
+}
+
+.body-interior {
+    background-color: rgba(255, 255, 255, .1);
+    width: 1020px;
+    margin:  0 auto;
+    height: auto;
+    padding: 40px;
+}
+
+.my-data {
+    border-bottom: 2px solid var(--text-color);
+}
+
+.my-photo {
+    background-image: url(./assets/resume.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.my-name,
+.my-prof,
+.skills,
+.education {
+    margin-top: 20px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.my-prof,
+.skills,
+.education {
+    margin: 10px 0 10px 0;
+    font-size: 1.5rem;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between
+}
+
+.skill,
+.education-info-un,
+.education-info-spec {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
