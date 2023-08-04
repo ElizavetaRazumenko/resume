@@ -2,16 +2,25 @@
     --bg-color: #fdfdfd;
     --text-color: #ffffff;
     --gold-color: #fae362;
+    --black-color: #000000;
 }
+
 body {
     box-sizing: border-box;
     margin:0; 
     padding:0; 
-    background-color: var(--bg-color);
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/mramor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .body-interior {
-    background-color: rgba(48, 47, 47, 0.7);
+    background-color: rgba(82, 80, 80, 0.5);
     width: 1020px;
     margin:  0 auto;
     height: auto;
@@ -22,14 +31,73 @@ body {
     border-bottom: 2px solid var(--gold-color);
 }
 
-.my-photo {
-    background-image: url(./assets/resume.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
+.my-info {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
 }
 
+.my-contacts {
+    margin-right: 20px;
+}
+
+.image-row {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.image-row-1 {
+    background-image: url(./assets/phone.png);
+}
+
+.image-row-2 {
+    background-image: url(./assets/mail.png);
+}
+
+.image-row-3 {
+    background-image: url(./assets/location.png);
+}
+
+.image-row-4 {
+    background-image: url(./assets/linkedIn.png);
+}
+
+.image-row-5 {
+    background-image: url(./assets/telega.png);
+}
+
+.a-row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--black-color);
+    font-weight: 700;
+    transition: color .5s;
+}
+
+.a-row:hover {
+    cursor: pointer;
+    color: #4d4d4d;
+}
+
+
+.my-photo {
+    margin-top: 20px;
+    background-image: url(./assets/resume.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 220px;
+    height: 220px;
+}
+
+.p-contacts,
 .my-name,
 .my-prof,
 .skills,
@@ -43,11 +111,22 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.my-prof,
+.p-contacts,
 .skills,
 .education {
     margin: 10px 0 10px 0;
     font-size: 1.5rem;
+    color: var(--black-color);
+}
+
+.my-prof {
+    font-size: 1.2rem;
+    margin: 10px 0 10px 10px;
+    color: var(--black-color);
+}
+
+.p-contacts {
+    font-size: 2rem;
 }
 
 .main {
@@ -67,13 +146,14 @@ body {
 .education-info-un,
 .education-info-spec,
 .courses-school {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 10px 0;
     text-transform: none;
     letter-spacing: .5px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
+.experience,
 .courses {
     margin-top: 25px;
 }
@@ -82,4 +162,19 @@ body {
 .education-info-spec,
 .courses-school {
     margin-left: 25px;
+}
+
+.work {
+    margin-bottom: 15px;
+}
+
+.work2,
+.work3,
+.work4,
+.work5 {
+    margin-top: 0;
+}
+
+.work4 {
+    margin-bottom: 0;
 }
