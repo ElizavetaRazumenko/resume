@@ -92,9 +92,11 @@ body {
     margin-top: 20px;
     background-image: url(./assets/resume.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 220px;
-    height: 220px;
+    background-size: cover;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 5px solid var(--gold-color);
 }
 
 .p-contacts,
@@ -103,7 +105,7 @@ body {
 .skills,
 .education {
     margin-top: 20px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     color: var(--text-color);
     font-weight: 700;
@@ -127,6 +129,7 @@ body {
 
 .p-contacts {
     font-size: 2rem;
+    margin-top: 20px;
 }
 
 .main {
@@ -178,3 +181,22 @@ body {
 .work4 {
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 690px) {
+    .my-info {
+        margin-left: 10px;
+    }
+
+    .my-photo {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .my-info,
+    .skills-ed-wrapper {
+        flex-direction: column;
+    }
+  }

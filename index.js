@@ -54,7 +54,7 @@ const workExperience1 = createElement('div', 'courses-school work', experience, 
 const workExperience2 = createElement('div', 'courses-school work work2', experience, 'Preparation of documentation for tenders (2021)');
 const workExperience3 = createElement('div', 'courses-school work work3', experience, 'Сalculation of estimates (2022)');
 const workExperience4 = createElement('div', 'courses-school work work4', experience, `Javascript WEB Applications design`);
-const workExperience5 = createElement('div', 'courses-school work work5', experience, `and development (2022- now)`);
+const workExperience5 = createElement('div', 'courses-school work work5', experience, 'and development (2022- "${new Date().getMonth()}".2023) :)');
 
 const english = createElement('div', 'education english', educationWrapper, 'English level:');
 const englishLevel = createElement('div', 'courses-school english', educationWrapper, 'B2 - C1');
