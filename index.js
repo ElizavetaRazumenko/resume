@@ -26,7 +26,7 @@ const arrayOfLinks = [
     'https://t.me/e_rzmnk',
     'https://github.com/ElizavetaRazumenko'
 ];
-const arrayInfo = ['+375(29)-785-10-55', 'razumenko99@mail.ru', 'Belarus, Minsk (st. Petrovschina)', 'Elizaveta Razumenko', '@e_rzmnk', 'GitHub'];
+const arrayInfo = ['+375(29)-785-10-55', 'razumenko99@mail.ru', 'Belarus, Minsk (st. Petrovschina)', 'Elizaveta Razumenko', '@e_rzmnk', 'ElizavetaRazumenko'];
 for (let i = 0; i < 6; i += 1) {
     const a = createElement('a', `a-row a-row-${i}`, myContacts, arrayInfo[i]);
     createElement('div', `image-row image-row-${i + 1}`, a);
