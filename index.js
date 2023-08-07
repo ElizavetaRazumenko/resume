@@ -40,7 +40,7 @@ const main = createElement('main', 'main', body_interior);
 const skillsEducWrapper = createElement('div', 'skills-ed-wrapper', main);
 const skills = createElement('div', 'skills', skillsEducWrapper, 'skills:');
 const skills_list = createElement('ul', 'skills-ol', skills);
-const shills_Array = ['HTML', 'HTML5', 'CSS', 'CSS3', 'SASS', 'Javascript', 'Typescript', 'Git', 'Webpack', 'React', 'Figma', 'Adobe Photoshop', 'Abobe Premiere Pro', 'BEM', 'FSD', 'AJAX'];
+const shills_Array = ['HTML/HTML5', 'CSS/CSS3', 'SASS', 'Javascript', 'Typescript', 'Git', 'Webpack', 'React', 'Figma', 'Adobe Photoshop', 'Abobe Premiere Pro', 'BEM', 'FSD', 'AJAX', 'fetch'];
 shills_Array.forEach((item) => { createElement('li', 'skill', skills_list, `${item}`)});
 const educationWrapper = createElement('div', 'education-wrapper', skillsEducWrapper);
 const education = createElement('div', 'education', educationWrapper, 'education:');
@@ -54,7 +54,7 @@ const workExperience1 = createElement('div', 'courses-school work', experience, 
 const workExperience2 = createElement('div', 'courses-school work work2', experience, 'Preparation of documentation for tenders (2021)');
 const workExperience3 = createElement('div', 'courses-school work work3', experience, 'Сalculation of estimates (2022)');
 const workExperience4 = createElement('div', 'courses-school work work4', experience, `Javascript WEB Applications design`);
-const workExperience5 = createElement('div', 'courses-school work work5', experience, 'and development (2022- "${new Date().getMonth()}".2023) :)');
+const workExperience5 = createElement('div', 'courses-school work work5', experience, 'and development (2022- now)');
 
 const english = createElement('div', 'education english', educationWrapper, 'English level:');
 const englishLevel = createElement('div', 'courses-school english', educationWrapper, 'B2 - C1');
