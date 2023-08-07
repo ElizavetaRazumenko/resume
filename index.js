@@ -23,10 +23,11 @@ const arrayOfLinks = [
     'mailto:razumenko99@mail.ru', 
     'https://yandex.by/maps/157/minsk/stops/station__9891255/?ll=27.518536%2C53.887030&tab=overview&z=13', 
     'https://www.linkedin.com/in/elizaveta-razumenko-508187282',
-    'https://t.me/e_rzmnk'
+    'https://t.me/e_rzmnk',
+    'https://github.com/ElizavetaRazumenko'
 ];
-const arrayInfo = ['+375(29)-785-10-55', 'razumenko99@mail.ru', 'Belarus, Minsk (st. Petrovschina)', 'Elizaveta Razumenko', '@e_rzmnk',];
-for (let i = 0; i < 5; i += 1) {
+const arrayInfo = ['+375(29)-785-10-55', 'razumenko99@mail.ru', 'Belarus, Minsk (st. Petrovschina)', 'Elizaveta Razumenko', '@e_rzmnk', 'GitHub'];
+for (let i = 0; i < 6; i += 1) {
     const a = createElement('a', `a-row a-row-${i}`, myContacts, arrayInfo[i]);
     createElement('div', `image-row image-row-${i + 1}`, a);
     a.href = arrayOfLinks[i];

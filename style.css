@@ -5,6 +5,11 @@
     --black-color: #000000;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     box-sizing: border-box;
     margin:0; 
@@ -24,7 +29,7 @@ body {
     width: 1020px;
     margin:  0 auto;
     height: auto;
-    padding: 40px;
+    padding: 0 40px;
 }
 
 .my-data {
@@ -67,6 +72,10 @@ body {
 
 .image-row-5 {
     background-image: url(./assets/telega.png);
+}
+
+.image-row-6 {
+    background-image: url(./assets/github.png);
 }
 
 .a-row {
@@ -116,13 +125,13 @@ body {
 .p-contacts,
 .skills,
 .education {
-    margin: 10px 0 10px 0;
-    font-size: 1.5rem;
+    margin: 10px 0 0 0;
+    font-size: 1.3rem;
     color: var(--black-color);
 }
 
 .my-prof {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 10px 0 10px 10px;
     color: var(--black-color);
 }
@@ -149,7 +158,7 @@ body {
 .education-info-un,
 .education-info-spec,
 .courses-school {
-    font-size: 1rem;
+    font-size: .9rem;
     margin: 10px 0;
     text-transform: none;
     letter-spacing: .5px;
